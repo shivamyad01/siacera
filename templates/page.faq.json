@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "category": {
+          "type": "category",
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_j6Gz9F": {
+          "type": "question",
+          "settings": {
+            "question": "What is Siacera?",
+            "answer": "<p>Siacera is a dermatologically driven skincare brand focused on creating high-performance, science-backed formulations designed specifically for Indian skin and climate conditions.</p>"
+          }
+        },
+        "question_Uz7Xdh": {
+          "type": "question",
+          "settings": {
+            "question": "Are Siacera products dermatologically tested?",
+            "answer": "<p>Yes, all Siacera products are developed under expert dermatological supervision and tested for safety, efficacy, and skin compatibility.</p>"
+          }
+        },
+        "question_Dbyb7Q": {
+          "type": "question",
+          "settings": {
+            "question": "Are your products suitable for all skin types?",
+            "answer": "<p>Most Siacera formulations are designed to suit all skin types, including sensitive skin. However, we recommend a patch test before use.</p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "question": "What kind of ingredients do you use?",
+            "answer": "<p>Our formulas combine <strong>scientifically proven actives</strong> like Niacinamide, Salicylic Acid, Hyaluronic Acid, and natural extracts to deliver visible results without irritation.</p>"
+          }
+        },
+        "question_DR67hk": {
+          "type": "question",
+          "settings": {
+            "question": "How can I track my order?",
+            "answer": "<p>Once your order is shipped, you’ll receive an email or SMS with the tracking details. You can also check your order status on our website under <em>My Orders</em>.</p>"
+          }
+        },
+        "question_3Yaea9": {
+          "type": "question",
+          "settings": {
+            "question": "What should I do if I receive a damaged product?",
+            "answer": "<p>Please email <a><strong>support@siacera.com</strong></a> within <strong>48 hours</strong> of delivery with photos or videos of the damaged product. Our team will promptly arrange a replacement or refund.</p><p></p>"
+          }
+        },
+        "question_T8zFGi": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category",
+        "question-1",
+        "question-2",
+        "question_j6Gz9F",
+        "question_Uz7Xdh",
+        "question_Dbyb7Q",
+        "question-3",
+        "question_DR67hk",
+        "question_3Yaea9",
+        "question_T8zFGi"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
+}

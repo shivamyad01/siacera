@@ -1,0 +1,83 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image": "{{ collection.metafields.custom.collection_banner_desktop.value }}",
+        "mobile_image": "{{ collection.metafields.custom.collection_banner_mobile.value }}",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "show_image": true,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": true,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "hide_product_information": false,
+        "products_per_page": 48,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": false,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": true,
+        "show_filters": true,
+        "show_results_count": true,
+        "show_filter_group_name": false,
+        "show_filter_values_count": true,
+        "open_filters_by_default": false
+      }
+    },
+    "faq_azVXaA": {
+      "type": "faq",
+      "blocks": {
+        "question_Wewphe": {
+          "type": "question",
+          "repeater": "{{ collection.metafields.custom.collection_faqs.value }}",
+          "settings": {
+            "question": "{{ block.repeater.question.value }}",
+            "answer": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "question_Wewphe"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "main",
+    "faq_azVXaA"
+  ]
+}

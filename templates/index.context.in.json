@@ -1,0 +1,172 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "in"
+  },
+  "sections": {
+    "slideshow": {
+      "settings": {},
+      "blocks": {
+        "video_AmkWXP": {
+          "settings": {
+            "subheading": "DISCOVER",
+            "title": "TIMELESS SKINCARE",
+            "mobile_text_position": "place-self-center-start text-start",
+            "desktop_text_position": "sm:place-self-end-start sm:text-start",
+            "button_1_text": "A glow that tells your story"
+          }
+        }
+      }
+    },
+    "featured_product_bAt7h": {
+      "type": "featured-product",
+      "disabled": false,
+      "settings": {
+        "color_scheme": "",
+        "product": "",
+        "separate_section_with_border": true,
+        "container_size": "lg",
+        "product_info_size": 45,
+        "center_basic_info": false,
+        "header-edb8399c5871a0c0a7b3e0f052980558": null,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "header-f7ae32ce46e16c294467be83875a87c1": null,
+        "enable_image_zoom": false,
+        "max_image_zoom_level": 3,
+        "header-efe4ffe4b3bf5cc804f7d193ea63a764": null,
+        "subheading": "",
+        "title": "Featured product",
+        "content": ""
+      },
+      "blocks": {
+        "vendor_zVkbK": {
+          "type": "vendor",
+          "disabled": false,
+          "settings": {}
+        },
+        "title_DER7F": {
+          "type": "title",
+          "disabled": false,
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges_ajLV6": {
+          "type": "badges",
+          "disabled": false,
+          "settings": {
+            "paragraph-91337033cfa26e8387bcb543a452ae1f": null
+          }
+        },
+        "price_ryUBf": {
+          "type": "price",
+          "disabled": false,
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_EtH6Y": {
+          "type": "rating",
+          "disabled": false,
+          "settings": {
+            "paragraph-cf2da117d4e6cb221741067197e10be1": null,
+            "show_empty": true,
+            "rating_mode": "rating"
+          }
+        },
+        "payment_terms_xfekb": {
+          "type": "payment_terms",
+          "disabled": false,
+          "settings": {
+            "paragraph-60d3c901f47a5a1b99ea3e7d9831b80f": null
+          }
+        },
+        "separator_tJHYX": {
+          "type": "separator",
+          "disabled": false,
+          "settings": {}
+        },
+        "description_BWMHE": {
+          "type": "description",
+          "disabled": false,
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_FPzxC": {
+          "type": "variant_picker",
+          "disabled": false,
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_FGHEX": {
+          "type": "quantity_selector",
+          "disabled": false,
+          "settings": {
+            "paragraph-1935cdb8a0c2452208e2dd8b4b76e5bb": null
+          }
+        },
+        "buy_buttons_T4CjJ": {
+          "type": "buy_buttons",
+          "disabled": false,
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_fVxib": {
+          "type": "pickup_availability",
+          "disabled": false,
+          "settings": {
+            "paragraph-944164b9606ceb6ab3beb429337ba6e3": null
+          }
+        }
+      },
+      "block_order": [
+        "vendor_zVkbK",
+        "title_DER7F",
+        "badges_ajLV6",
+        "price_ryUBf",
+        "rating_EtH6Y",
+        "payment_terms_xfekb",
+        "separator_tJHYX",
+        "description_BWMHE",
+        "variant_picker_FPzxC",
+        "quantity_selector_FGHEX",
+        "buy_buttons_T4CjJ",
+        "pickup_availability_fVxib"
+      ],
+      "name": "t:sections.featured_product.presets.featured_product.name"
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections-1",
+    "scrolling-content-2",
+    "media_grid_qRzzUa",
+    "featured_product_bAt7h",
+    "testimonials"
+  ]
+}
