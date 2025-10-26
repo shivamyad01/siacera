@@ -1,7 +1,7 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Prestige",
+    "theme_name": "Siacera",
     "theme_author": "Maestrooo",
     "theme_version": "10.10.1",
     "theme_documentation_url": "https://support.maestrooo.com/",
@@ -616,9 +616,25 @@
         "content": "t:theme_settings.product_card.promotion_category"
       },
       {
+        "type": "range",
+        "id": "product_title_font_size",
+        "label": "Product Title Font Size (px)",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "default": 14,
+        "unit": "px"
+      },
+      {
         "type": "checkbox",
         "id": "show_quick_buy",
         "label": "t:theme_settings.product_card.show_quick_buy",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_add_to_cart_button",
+        "label": "Show 'Add to Cart' button on product cards",
         "default": true
       },
       {
