@@ -1,0 +1,168 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-a67cd0a9-ab7c-4593-a79b-6d3a4352535e",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "rich_text_86pjd3": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_y9Twbq": {
+          "type": "subheading",
+          "settings": {
+            "text": "Science Refined, Beauty Redefined"
+          }
+        },
+        "heading_bbL3zN": {
+          "type": "heading",
+          "settings": {
+            "text": "Welcome to siacera",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_6FRndr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>At <strong>Siacera</strong>, skincare is not just another step in your day. It is a commitment to skin health shaped by science and elevated by luxury. Built on deep research and clinical insight, we bring together <strong>dermatological precision with the indulgence of premium beauty</strong>, offering products that inspire both trust and desire.</p><p> We don’t believe in empty promises. Every Siacera formulation is <strong>meticulously crafted for Indian skin</strong>, combining proven actives with luxurious textures that transform daily care into a ritual you look forward to. The result: skincare that feels indulgent yet works with the credibility of clinical science.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_y9Twbq",
+        "heading_bbL3zN",
+        "richtext_6FRndr"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "tabs_Nh6mbD": {
+      "type": "tabs",
+      "blocks": {
+        "tab_CCxH6m": {
+          "type": "tab",
+          "settings": {
+            "title": "Expertly Developed, Doctor Approved",
+            "content": "<p>Every formula is created in collaboration with specialists and has undergone<br/>stringent testing at NABL Certified lab to ensure results that doctors recommend<br/>with confidence.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_eXWfMh": {
+          "type": "tab",
+          "settings": {
+            "title": "Gentle Power, Visible Results",
+            "content": "<p>Advanced actives meet soothing bases, giving your skin effective solutions that<br/>remain kind and non-irritating.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_Rdnk7m": {
+          "type": "tab",
+          "settings": {
+            "title": "Solutions for Everyday Challenges",
+            "content": "<p>Whether it’s the harshness of pollution, stress, or water damage, Siacera is built to<br/>answer the real needs of modern skin.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        },
+        "tab_TzqYHa": {
+          "type": "tab",
+          "settings": {
+            "title": "Quality Without Compromise",
+            "content": "<p>Produced to global standards, each product has been patch tested by dermatologist<br/>on 24 random people of different age groups for unmatched reliability.</p>",
+            "page": "",
+            "open_on_mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "tab_CCxH6m",
+        "tab_eXWfMh",
+        "tab_Rdnk7m",
+        "tab_TzqYHa"
+      ],
+      "name": "t:sections.tabs.presets.tab.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "subheading": "",
+        "title": "Why Choose Siacera?",
+        "text_alignment": "center"
+      }
+    },
+    "image_with_text_bd73an": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cWx9r8": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Philosophy",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_fYPjwM": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>True skincare isn’t about overnight miracles. It’s about discipline. A single product cannot replace medical treatment or prescribed medicines when required, and we are transparent about that. What Siacera offers is a way to sustain, protect, and enhance your skin health over time, serving as the foundation of a healthy daily routine. For deeper or persistent concerns, professional consultation is essential. Our products complement expert care, helping you achieve results that last — results you can trust. Because the real measure of luxury lies not in appearance alone, but in the confidence it leaves behind.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cWx9r8",
+        "richtext_fYPjwM"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "image": "shopify://shop_images/Artboard6.jpg",
+        "reveal_on_scroll": false,
+        "image_position": "end",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "newsletter_MqA4FE": {
+      "type": "newsletter",
+      "name": "t:sections.newsletter.presets.newsletter.name",
+      "settings": {
+        "color_scheme": "scheme-e0655222-f4d8-45d1-86f5-d150a9df89f2",
+        "separate_section_with_border": true,
+        "image_size": "auto",
+        "subheading": "Siacera — Science you understand, skin you love",
+        "title": "",
+        "content": "<h2>10% OFF ON YOUR FIRST ORDER</h2>",
+        "button_text": "Subscribe",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_86pjd3",
+    "tabs_Nh6mbD",
+    "image_with_text_bd73an",
+    "newsletter_MqA4FE"
+  ]
+}

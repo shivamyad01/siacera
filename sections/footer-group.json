@@ -11,69 +11,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "text-with-icons": {
-      "type": "text-with-icons",
-      "blocks": {
-        "icon-1": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-award-gift",
-            "custom_icon": "shopify://shop_images/transport.png",
-            "icon_width": 32,
-            "mobile_icon_width": 24,
-            "title": "Free delivery",
-            "content": ""
-          }
-        },
-        "icon-2": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-money",
-            "custom_icon": "shopify://shop_images/cashback.png",
-            "icon_width": 32,
-            "mobile_icon_width": 24,
-            "title": "Satisfied or refunded",
-            "content": ""
-          }
-        },
-        "icon-3": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-award-gift",
-            "custom_icon": "shopify://shop_images/online-chat.png",
-            "icon_width": 32,
-            "mobile_icon_width": 24,
-            "title": "Top-notch support",
-            "content": ""
-          }
-        },
-        "icon-4": {
-          "type": "item",
-          "settings": {
-            "icon": "picto-award-gift",
-            "custom_icon": "shopify://shop_images/payment-protection.png",
-            "icon_width": 32,
-            "mobile_icon_width": 24,
-            "title": "Secure payments",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "icon-1",
-        "icon-2",
-        "icon-3",
-        "icon-4"
-      ],
-      "settings": {
-        "color_scheme": "scheme-e0655222-f4d8-45d1-86f5-d150a9df89f2",
-        "separate_section_with_border": false,
-        "stack_on_mobile": false,
-        "icon_color": "#ffffff",
-        "text_color": "#ffffff",
-        "text_alignment": "center"
-      }
-    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -97,6 +34,14 @@
         "links_RWVect": {
           "type": "links",
           "settings": {
+            "menu": "customer-services",
+            "show_menu_title": true,
+            "menu_title": "Customer Services"
+          }
+        },
+        "links_8LAYw9": {
+          "type": "links",
+          "settings": {
             "menu": "privacy-and-terms",
             "show_menu_title": true,
             "menu_title": "Privacy and Terms"
@@ -115,6 +60,7 @@
         "newsletter",
         "links",
         "links_RWVect",
+        "links_8LAYw9",
         "text"
       ],
       "settings": {
@@ -130,7 +76,6 @@
     }
   },
   "order": [
-    "text-with-icons",
     "footer"
   ]
 }

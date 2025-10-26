@@ -117,7 +117,7 @@
         "color_scheme": "scheme-2",
         "separate_section_with_border": false,
         "hide_product_information": false,
-        "stack_products": true,
+        "stack_products": false,
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 0.2,
@@ -151,6 +151,7 @@
       "block_order": [
         "text-1"
       ],
+      "disabled": true,
       "settings": {
         "separate_section_with_border": true,
         "scrolling_speed": 0.3,
@@ -402,10 +403,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Non_Toxic_logo.webp",
+            "custom_icon": "shopify://shop_images/Beauty.png",
             "icon_width": 56,
-            "mobile_icon_width": 24,
-            "title": "Free shipping",
+            "mobile_icon_width": 56,
+            "title": "Clean beauty",
             "content": ""
           }
         },
@@ -413,10 +414,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/cruelty_free_logo.webp",
-            "icon_width": 64,
+            "custom_icon": "shopify://shop_images/Non_toxic.png",
+            "icon_width": 56,
             "mobile_icon_width": 56,
-            "title": "Free shipping",
+            "title": "Non-toxic",
             "content": ""
           }
         },
@@ -424,10 +425,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/clean_beauty_logo.webp",
+            "custom_icon": "shopify://shop_images/Vegan.png",
             "icon_width": 56,
-            "mobile_icon_width": 24,
-            "title": "Free shipping",
+            "mobile_icon_width": 56,
+            "title": "Vegan",
             "content": ""
           }
         },
@@ -435,10 +436,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/Vegan_logo.webp",
+            "custom_icon": "shopify://shop_images/Sulphaste_free.png",
             "icon_width": 56,
-            "mobile_icon_width": 24,
-            "title": "Free shipping",
+            "mobile_icon_width": 56,
+            "title": "Sulphate Free",
             "content": ""
           }
         },
@@ -446,10 +447,10 @@
           "type": "item",
           "settings": {
             "icon": "picto-delivery-truck",
-            "custom_icon": "shopify://shop_images/recyclable_packaging_logo.webp",
+            "custom_icon": "shopify://shop_images/Recycle.png",
             "icon_width": 56,
-            "mobile_icon_width": 24,
-            "title": "Free shipping",
+            "mobile_icon_width": 56,
+            "title": "100% Recycle",
             "content": ""
           }
         }
@@ -477,7 +478,7 @@
         "testimonial-1": {
           "type": "testimonial",
           "settings": {
-            "content": "<p>Sleek and compact, this piece keeps everything organized with just the right balance of structure and softness.</p>",
+            "content": "<p>Very moisturizing and gentle. Keeps skin soft, smooth, and hydrated throughout the day. Great for dry or sensitive skin.</p>",
             "image": "shopify://shop_images/img4.jpg",
             "logo_max_width": 110,
             "logo_mobile_max_width": 100,
@@ -487,7 +488,7 @@
         "testimonial_AtEfnp": {
           "type": "testimonial",
           "settings": {
-            "content": "<p>Sleek and compact, this piece keeps everything organized with just the right balance of structure and softness.</p>",
+            "content": "<p>Siacera EyeLuminate Under Eye Gel is lightweight, absorbs quickly, and helps reduce puffiness and dark circles. Makes eyes look fresh and awake. Perfect for daily use.</p>",
             "image": "shopify://shop_images/cropped_circle_image.png",
             "logo_max_width": 85,
             "logo_mobile_max_width": 100,
@@ -497,7 +498,7 @@
         "testimonial-3": {
           "type": "testimonial",
           "settings": {
-            "content": "<p>Minimalist design meets everyday function — perfect for keeping your essentials secure and stylish on the go.</p>",
+            "content": "<p>Lightweight, absorbs fast, brightens skin, and reduces pigmentation. Makes the skin look fresh and smooth.</p>",
             "image": "shopify://shop_images/cropped_circle_image_1.png",
             "logo_max_width": 80,
             "logo_mobile_max_width": 100,
@@ -517,8 +518,72 @@
         "cycle_speed": 5,
         "font_size_factor": 1,
         "subheading": "",
-        "title": "Testimonial",
+        "title": "Exclusive Offers",
         "content": ""
+      }
+    },
+    "text_with_icons_TQUUFH": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_3HBzDj": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/transport.png",
+            "icon_width": 44,
+            "mobile_icon_width": 44,
+            "title": "Free shipping",
+            "content": ""
+          }
+        },
+        "item_CAF7yQ": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/payment-protection.png",
+            "icon_width": 44,
+            "mobile_icon_width": 44,
+            "title": "Secure Payment",
+            "content": ""
+          }
+        },
+        "item_FQRgGW": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/online-chat.png",
+            "icon_width": 44,
+            "mobile_icon_width": 44,
+            "title": "Customer support",
+            "content": ""
+          }
+        },
+        "item_TjwkDb": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-delivery-truck",
+            "custom_icon": "shopify://shop_images/cashback.png",
+            "icon_width": 44,
+            "mobile_icon_width": 44,
+            "title": "Exclusive Offers",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_3HBzDj",
+        "item_CAF7yQ",
+        "item_FQRgGW",
+        "item_TjwkDb"
+      ],
+      "name": "t:sections.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "color_scheme": "scheme-e0655222-f4d8-45d1-86f5-d150a9df89f2",
+        "separate_section_with_border": false,
+        "stack_on_mobile": true,
+        "icon_color": "",
+        "text_color": "#efefef",
+        "text_alignment": "center"
       }
     }
   },
@@ -531,6 +596,7 @@
     "featured_product_Xp7pb6",
     "scrolling_content_kCbFMW",
     "text_with_icons_kzc3WV",
-    "testimonials"
+    "testimonials",
+    "text_with_icons_TQUUFH"
   ]
 }
