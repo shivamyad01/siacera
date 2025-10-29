@@ -12,11 +12,21 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
     },
     "contact-form": {
       "type": "contact",
-      "settings": {}
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Contact",
+        "content": ""
+      }
     }
   },
   "order": [

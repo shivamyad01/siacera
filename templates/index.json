@@ -84,6 +84,156 @@
         "controls_color": "#ffffff"
       }
     },
+    "ss_video_slider_2_HDh87q": {
+      "type": "ss-video-slider-2",
+      "blocks": {
+        "slide_kPnRJF": {
+          "type": "slide",
+          "settings": {
+            "media_type": "video",
+            "video": "shopify://files/videos/smiling-woman-removing-makeup-with-cotton-pad-and-2025-09-24-17-56-14-utc.mov",
+            "video_url": "",
+            "title": "",
+            "button": "Glow",
+            "url": "shopify://collections/skin-care"
+          }
+        },
+        "slide_nLdmgn": {
+          "type": "slide",
+          "settings": {
+            "media_type": "video",
+            "video": "shopify://files/videos/1761666851471613.mp4",
+            "video_url": "",
+            "title": "",
+            "button": "Cleanse",
+            "url": "shopify://collections/skin-care"
+          }
+        },
+        "slide_LDgN63": {
+          "type": "slide",
+          "settings": {
+            "media_type": "video",
+            "video": "shopify://files/videos/1761666537832933.mp4",
+            "video_url": "",
+            "title": "",
+            "button": "Hydrate",
+            "url": "shopify://collections/skin-care"
+          }
+        },
+        "slide_wdDx6Q": {
+          "type": "slide",
+          "settings": {
+            "media_type": "video",
+            "video": "shopify://files/videos/1761666237324656.mp4",
+            "video_url": "",
+            "title": "",
+            "button": "Protect",
+            "url": "shopify://collections/skin-care"
+          }
+        }
+      },
+      "block_order": [
+        "slide_kPnRJF",
+        "slide_nLdmgn",
+        "slide_LDgN63",
+        "slide_wdDx6Q"
+      ],
+      "name": "SS - Video slider #2",
+      "settings": {
+        "heading": "<p>SHOP BY CATEGORY</p>",
+        "heading_custom": true,
+        "heading_font": "questrial_n4",
+        "heading_size": 24,
+        "heading_size_mobile": 20,
+        "heading_height": 70,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "arrow_size": 32,
+        "arrow_size_mobile": 16,
+        "arrow_icon_size": 8,
+        "arrow_icon_size_mobile": 8,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_shadow": true,
+        "arrow_show_desktop": false,
+        "arrow_show_mobile": true,
+        "slider_view": 4,
+        "slider_view_mobile": 1.7,
+        "slider_gap": 0,
+        "slider_gap_mobile": 0,
+        "slider_mt": 24,
+        "slider_mt_mobile": 24,
+        "slide_radius": 0,
+        "slide_border_thickness": 0,
+        "slide_ratio": "portrait",
+        "slide_ratio_mobile": "portrait",
+        "slide_content_padding_horizontal": 16,
+        "slide_content_padding_horizontal_mobile": 16,
+        "slide_content_padding_vertical": 16,
+        "slide_content_padding_vertical_mobile": 16,
+        "slide_content_vertical_align": "bottom",
+        "slide_content_vertical_align_mobile": "bottom",
+        "slide_content_align": "left",
+        "slide_content_align_mobile": "left",
+        "title_custom": true,
+        "title_font": "questrial_n4",
+        "title_size": 24,
+        "title_size_mobile": 24,
+        "title_height": 130,
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 13,
+        "button_size_mobile": 13,
+        "button_height": 100,
+        "button_padding_horizontal": 24,
+        "button_padding_horizontal_mobile": 24,
+        "button_padding_vertical": 12,
+        "button_padding_vertical_mobile": 12,
+        "button_radius": 100,
+        "button_border_thickness": 0,
+        "button_mt": 16,
+        "button_mt_mobile": 12,
+        "button_style": "non_outline",
+        "controls_gap": 6,
+        "controls_gap_mobile": 6,
+        "controls_size": 34,
+        "controls_size_mobile": 34,
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "",
+        "arrow_bg_hover_color": "#000000",
+        "arrow_border_color": "#000000",
+        "arrow_border_hover_color": "#000000",
+        "slide_border_color": "#000000",
+        "title_color": "#ffffff",
+        "button_color": "#000000",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#ffffff",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "controls_icon_color": "#ffffff",
+        "controls_bg_color": "#000000",
+        "heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
     "featured-collections-1": {
       "type": "featured-collections",
       "blocks": {
@@ -122,7 +272,7 @@
         "products_per_row_desktop": 4,
         "horizontal_spacing_factor": 0.2,
         "vertical_spacing_factor": 0.4,
-        "subheading": "Our best sellers"
+        "subheading": "DISCOVER OUR RANGE"
       }
     },
     "video_y4krLx": {
@@ -354,7 +504,7 @@
         "enable_image_zoom": false,
         "max_image_zoom_level": 3,
         "subheading": "",
-        "title": "Top Selleing",
+        "title": "best seller",
         "content": ""
       }
     },
@@ -518,7 +668,7 @@
         "cycle_speed": 5,
         "font_size_factor": 1,
         "subheading": "",
-        "title": "Exclusive Offers",
+        "title": "Testimonial",
         "content": ""
       }
     },
@@ -589,6 +739,7 @@
   },
   "order": [
     "slideshow",
+    "ss_video_slider_2_HDh87q",
     "featured-collections-1",
     "video_y4krLx",
     "scrolling-content-2",

@@ -34,11 +34,35 @@
             "show_taxes_notice": false
           }
         },
-        "rating_HdtbDJ": {
-          "type": "rating",
+        "text_PmL8Ct": {
+          "type": "text",
           "settings": {
-            "show_empty": true,
-            "rating_mode": "rating"
+            "text": "<p>{{ product.metafields.custom.short_description.value }}</p>"
+          }
+        },
+        "image_aekRnY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Icons_1.png",
+            "alignment": "start",
+            "width_mode": "full_width",
+            "max_width": 270,
+            "mobile_max_width": 200
+          }
+        },
+        "offers_wwfe8R": {
+          "type": "offers",
+          "settings": {
+            "stack_offers": false,
+            "offer_1_title": "Special Offer",
+            "offer_1_content": "<p><strong>Flat 10% OFF</strong>on your first purchase!Use Code: <strong>SIACERA </strong>at checkout.</p>",
+            "offer_2_title": "",
+            "offer_2_content": "",
+            "offer_3_title": "",
+            "offer_3_content": "",
+            "background": "",
+            "text_color": "",
+            "border_color": ""
           }
         },
         "variant_picker": {
@@ -64,31 +88,6 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "offers_wwfe8R": {
-          "type": "offers",
-          "settings": {
-            "stack_offers": false,
-            "offer_1_title": "Special Offer",
-            "offer_1_content": "<p><strong>Flat 10% OFF</strong>on your first purchase!Use Code: <strong>SIACERA </strong>at checkout.</p>",
-            "offer_2_title": "",
-            "offer_2_content": "",
-            "offer_3_title": "",
-            "offer_3_content": "",
-            "background": "",
-            "text_color": "",
-            "border_color": ""
-          }
-        },
-        "image_aekRnY": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-09-20_at_17.21.01.jpg",
-            "alignment": "start",
-            "width_mode": "custom",
-            "max_width": 270,
-            "mobile_max_width": 200
           }
         },
         "description": {
@@ -125,12 +124,12 @@
         "image_DKwcMW",
         "title",
         "price",
-        "rating_HdtbDJ",
+        "text_PmL8Ct",
+        "image_aekRnY",
+        "offers_wwfe8R",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "offers_wwfe8R",
-        "image_aekRnY",
         "description",
         "accordion_TKK3f8",
         "accordion_MiKjBy"

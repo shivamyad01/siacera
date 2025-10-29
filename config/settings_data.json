@@ -20,7 +20,7 @@
     "warning_color": "#ed8a00",
     "error_color": "#cb2b2b",
     "heading_font": "instrument_sans_n4",
-    "heading_letter_spacing": 18,
+    "heading_letter_spacing": 11,
     "text_font": "questrial_n4",
     "text_font_size_mobile": 16,
     "text_font_size_desktop": 17,
@@ -30,17 +30,26 @@
     "stagger_products_apparition": true,
     "product_image_aspect_ratio": "natural",
     "show_vendor": false,
-    "product_title_max_lines": 0,
+    "product_title_max_lines": 1,
     "product_card_text_font": "heading",
+    "product_price_strategy": "max_price",
     "product_color_display": "swatch",
-    "show_product_rating": false,
+    "show_product_rating": true,
     "show_product_rating_if_empty": false,
     "product_rating_mode": "rating",
+    "product_title_font_size": 14,
     "discount_mode": "saving",
     "cart_type": "drawer",
     "cart_icon": "shopping_bag",
-    "favicon": "shopify://shop_images/favicon.svg",
+    "favicon": "shopify://shop_images/Layer_1.png",
     "content_for_index": [],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
