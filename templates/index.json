@@ -14,7 +14,6 @@
       "blocks": {
         "video_AmkWXP": {
           "type": "video",
-          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/logo animation (1).mp4",
             "allow_sound": false,
@@ -39,38 +38,10 @@
             "border_color": "",
             "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
           }
-        },
-        "image_H4JYJA": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/Desktop.jpg",
-            "mobile_image": "shopify://shop_images/Mobile.jpg",
-            "subheading": "",
-            "title": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "content_max_width": 780,
-            "button_1_text": "",
-            "button_1_link": "",
-            "button_1_style": "solid",
-            "button_1_background": "#ffffff",
-            "button_1_text_color": "#000000",
-            "button_2_text": "",
-            "button_2_link": "",
-            "button_2_style": "outline",
-            "button_2_background": "#ffffff",
-            "button_2_text_color": "#000000",
-            "background": "",
-            "background_opacity": 50,
-            "text_color": "#ffffff",
-            "border_color": "",
-            "gradient_overlay": ""
-          }
         }
       },
       "block_order": [
-        "video_AmkWXP",
-        "image_H4JYJA"
+        "video_AmkWXP"
       ],
       "settings": {
         "allow_transparent_header": true,
@@ -95,7 +66,7 @@
             "video_url": "",
             "title": "",
             "button": "Glow",
-            "url": "shopify://collections/skin-care"
+            "url": "shopify://collections/glow"
           }
         },
         "slide_nLdmgn": {
@@ -106,7 +77,7 @@
             "video_url": "",
             "title": "",
             "button": "Cleanse",
-            "url": "shopify://collections/skin-care"
+            "url": "shopify://collections/cleanse"
           }
         },
         "slide_LDgN63": {
@@ -117,7 +88,7 @@
             "video_url": "",
             "title": "",
             "button": "Hydrate",
-            "url": "shopify://collections/skin-care"
+            "url": "shopify://collections/hydrate"
           }
         },
         "slide_wdDx6Q": {
@@ -128,7 +99,7 @@
             "video_url": "",
             "title": "",
             "button": "Protect",
-            "url": "shopify://collections/skin-care"
+            "url": "shopify://collections/protect"
           }
         }
       },
@@ -275,6 +246,73 @@
         "subheading": "DISCOVER OUR RANGE"
       }
     },
+    "scrolling_content_zcxbpQ": {
+      "type": "scrolling-content",
+      "blocks": {
+        "image_NeYDhn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/instyle_logo.avif"
+          }
+        },
+        "image_YfVqRC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Fashionista_Logo.avif"
+          }
+        },
+        "image_VNKegq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/cnn_logo.avif"
+          }
+        },
+        "image_KXdCQg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/New_Beauty_1.avif"
+          }
+        }
+      },
+      "block_order": [
+        "image_NeYDhn",
+        "image_YfVqRC",
+        "image_VNKegq",
+        "image_KXdCQg"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": false,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": true,
+        "text_font": "heading",
+        "text_font_size_mobile": 40,
+        "text_font_size_desktop": 96,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 105,
+        "background": "",
+        "text_color": ""
+      }
+    },
+    "skincare_comparison_gBj8zd": {
+      "type": "skincare-comparison",
+      "name": "Skincare Comparison",
+      "settings": {
+        "heading": "Unlike any other skincare",
+        "subheading": "We are the first and only skincare created with groundbreaking technology that allows NAD+ precursors to reach the epidermis to stimulate NAD+ where it matters most.",
+        "background_image_desktop": "shopify://shop_images/f6339b990c634784c87334ff40ee742d3cf3c8bd.webp",
+        "background_image_mobile": "shopify://shop_images/03616c5694e8cf700fdd27ed1f3d9eea49f16559.webp",
+        "left_title": "SIACERA",
+        "left_points": "<ul><li>Created from breakthrough NAD+ research by Harvard skin biologist Anna Mandinova</li><li>Intercepts aging by replenishing cellular energy levels</li><li>Supports immediate results and long-term skin health</li><li>Unique NAD+ boosting formula that targets skin cells</li></ul>",
+        "right_title": "OTHER BRANDS",
+        "right_points": "<ul><li>Created using traditional ingredients; focus on marketing instead of science</li><li>Addresses surface symptoms of aging, not the cause</li><li>Only provides temporary results</li><li>May use NAD+ molecules too large to penetrate the skin barrier</li></ul>",
+        "button_text": "Shop Our Products",
+        "button_link": ""
+      }
+    },
     "video_y4krLx": {
       "type": "video",
       "disabled": true,
@@ -318,83 +356,107 @@
         "text_color": "#b3b3b3"
       }
     },
-    "media_grid_qRzzUa": {
-      "type": "media-grid",
+    "featured_product_tDE6LU": {
+      "type": "featured-product",
       "blocks": {
-        "video_KnttCe": {
-          "type": "video",
+        "vendor_RYjP6y": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_JKbxYd": {
+          "type": "title",
           "settings": {
-            "color_scheme": "scheme-4",
-            "video": "shopify://files/videos/logo animation (1).mp4",
-            "autoplay": true,
-            "show_controls": false,
-            "column_count": "12",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "heading_tag": "h3"
           }
         },
-        "image_4YzHMX": {
-          "type": "image",
-          "disabled": true,
+        "badges_3mkpaT": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_AA64jG": {
+          "type": "price",
           "settings": {
-            "color_scheme": "",
-            "image": "shopify://shop_images/Artboard6.jpg",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "show_taxes_notice": false
           }
         },
-        "image_ky3LdN": {
-          "type": "image",
-          "disabled": true,
+        "rating_B8WUmC": {
+          "type": "rating",
           "settings": {
-            "color_scheme": "",
-            "image": "shopify://shop_images/Artboard_4.png",
-            "column_count": "4",
-            "row_count": 1,
-            "title": "",
-            "heading_tag": "h4",
-            "content": "",
-            "link_text": "",
-            "link_url": "",
-            "link_style": "link",
-            "text_position": "place-self-center text-center",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
+            "show_empty": true,
+            "rating_mode": "rating"
           }
+        },
+        "payment_terms_Ug8FxH": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "description_BV4nwC": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true
+          }
+        },
+        "variant_picker_Ni6UTU": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_Q4Eehy": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_Nw8x8G": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_ExwjnB": {
+          "type": "pickup_availability",
+          "settings": {}
         }
       },
       "block_order": [
-        "video_KnttCe",
-        "image_4YzHMX",
-        "image_ky3LdN"
+        "vendor_RYjP6y",
+        "title_JKbxYd",
+        "badges_3mkpaT",
+        "price_AA64jG",
+        "rating_B8WUmC",
+        "payment_terms_Ug8FxH",
+        "description_BV4nwC",
+        "variant_picker_Ni6UTU",
+        "quantity_selector_Q4Eehy",
+        "buy_buttons_Nw8x8G",
+        "pickup_availability_ExwjnB"
       ],
-      "name": "t:sections.media_grid.presets.media_grid.name",
+      "disabled": true,
+      "name": "t:sections.featured_product.presets.featured_product.name",
       "settings": {
-        "color_scheme": "scheme-2",
-        "separate_section_with_border": true,
-        "desktop_row_height": 290,
-        "mobile_row_height": 180,
-        "section_width": "full",
-        "spacing": "none",
+        "color_scheme": "",
+        "product": "siacera-nanobright-face-wash",
+        "separate_section_with_border": false,
+        "container_size": "lg",
+        "product_info_size": 45,
+        "center_basic_info": true,
+        "desktop_media_layout": "carousel_thumbnails_bottom",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": false,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
         "subheading": "",
-        "title": "",
+        "title": "BEST SELLER",
         "content": ""
       }
     },
@@ -488,6 +550,7 @@
         "buy_buttons_NYwF8Q",
         "pickup_availability_LAGFrH"
       ],
+      "disabled": true,
       "name": "t:sections.featured_product.presets.featured_product.name",
       "settings": {
         "color_scheme": "scheme-2",
@@ -664,11 +727,77 @@
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": false,
-        "auto_rotate_between_testimonials": false,
+        "auto_rotate_between_testimonials": true,
         "cycle_speed": 5,
-        "font_size_factor": 1,
+        "font_size_factor": 0.8,
         "subheading": "",
         "title": "Testimonial",
+        "content": ""
+      }
+    },
+    "multi_column_V3UreH": {
+      "type": "multi-column",
+      "blocks": {
+        "image_with_text_nQ3XTW": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Expertly Developed, Doctor Approved",
+            "heading_tag": "h3",
+            "content": "<p>Every formula is created in collaboration with specialists and has undergone<br/>stringent testing at NABL Certified lab to ensure results that doctors recommend<br/>with confidence.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_3V3nq9": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Gentle Power, Visible Results",
+            "heading_tag": "h3",
+            "content": "<p>Advanced actives meet soothing bases, giving your skin effective solutions that<br/>remain kind and non-irritating.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_4AyXJQ": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Solutions for Everyday Challenges",
+            "heading_tag": "h3",
+            "content": "<p>Whether it’s the harshness of pollution, stress, or water damage, Siacera is built to<br/>answer the real needs of modern skin.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        },
+        "image_with_text_6hXPi3": {
+          "type": "image_with_text",
+          "settings": {
+            "title": "Quality Without Compromise",
+            "heading_tag": "h3",
+            "content": "<p>Produced to global standards, each product has been patch tested by dermatologist<br/>on 24 random people of different age groups for unmatched reliability.</p>",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_nQ3XTW",
+        "image_with_text_3V3nq9",
+        "image_with_text_4AyXJQ",
+        "image_with_text_6hXPi3"
+      ],
+      "disabled": true,
+      "name": "t:sections.multi_column.presets.multi_column.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "columns_per_row": 3,
+        "stack_on_mobile": false,
+        "overlap_image": false,
+        "content_alignment": "center",
+        "text_alignment": "start",
+        "spacing": "xs",
+        "subheading": "",
+        "title": "Why Choose Siacera?",
         "content": ""
       }
     },
@@ -728,11 +857,11 @@
       ],
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
-        "color_scheme": "scheme-e0655222-f4d8-45d1-86f5-d150a9df89f2",
+        "color_scheme": "scheme-2",
         "separate_section_with_border": false,
-        "stack_on_mobile": true,
+        "stack_on_mobile": false,
         "icon_color": "",
-        "text_color": "#efefef",
+        "text_color": "#1c1c1c",
         "text_alignment": "center"
       }
     }
@@ -741,13 +870,16 @@
     "slideshow",
     "ss_video_slider_2_HDh87q",
     "featured-collections-1",
+    "scrolling_content_zcxbpQ",
+    "skincare_comparison_gBj8zd",
     "video_y4krLx",
     "scrolling-content-2",
-    "media_grid_qRzzUa",
+    "featured_product_tDE6LU",
     "featured_product_Xp7pb6",
     "scrolling_content_kCbFMW",
     "text_with_icons_kzc3WV",
     "testimonials",
+    "multi_column_V3UreH",
     "text_with_icons_TQUUFH"
   ]
 }

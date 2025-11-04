@@ -1,0 +1,262 @@
+{% schema %}
+{
+  "name": "Skincare Comparison",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Unlike any other skincare"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "We are the first and only skincare created with groundbreaking technology that allows NAD+ precursors to reach the epidermis to stimulate NAD+ where it matters most."
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_desktop",
+      "label": "Background Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image (Mobile)"
+    },
+    {
+      "type": "text",
+      "id": "left_title",
+      "label": "Left Box Title",
+      "default": "ARAMORE"
+    },
+    {
+      "type": "richtext",
+      "id": "left_points",
+      "label": "Left Box Points",
+      "default": "<ul><li>Created from breakthrough NAD+ research by Harvard skin biologist Anna Mandinova</li><li>Intercepts aging by replenishing cellular energy levels</li><li>Supports immediate results and long-term skin health</li><li>Unique NAD+ boosting formula that targets skin cells</li></ul>"
+    },
+    {
+      "type": "text",
+      "id": "right_title",
+      "label": "Right Box Title",
+      "default": "OTHER BRANDS"
+    },
+    {
+      "type": "richtext",
+      "id": "right_points",
+      "label": "Right Box Points",
+      "default": "<ul><li>Created using traditional ingredients; focus on marketing instead of science</li><li>Addresses surface symptoms of aging, not the cause</li><li>Only provides temporary results</li><li>May use NAD+ molecules too large to penetrate the skin barrier</li></ul>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Shop Our Products"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Skincare Comparison"
+    }
+  ]
+}
+{% endschema %}
+
+<section class="skincare-comparison">
+  <div class="skincare-hero">
+    <div class="skincare-overlay"></div>
+
+    <div class="skincare-content">
+      <div class="skincare-text">
+        <h2 class="skincare-heading">{{ section.settings.heading }}</h2>
+        <p class="skincare-subheading">{{ section.settings.subheading }}</p>
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_link }}" class="skincare-btn">{{ section.settings.button_text }}</a>
+        {% endif %}
+      </div>
+
+      <div class="skincare-boxes">
+        <div class="left-box">
+          <h3>{{ section.settings.left_title }}</h3>
+          {{ section.settings.left_points }}
+        </div>
+
+        <div class="right-box">
+          <h3>{{ section.settings.right_title }}</h3>
+          {{ section.settings.right_points }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* --- SECTION WRAPPER --- */
+.skincare-comparison {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --- HERO BACKGROUND --- */
+.skincare-hero {
+  background-image: url({{ section.settings.background_image_desktop | image_url: width: 2000 }});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 8%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+  .skincare-hero {
+    background-image: url({{ section.settings.background_image_mobile | image_url: width: 1000 }});
+    padding: 60px 6%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* --- DARK OVERLAY --- */
+.skincare-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+/* --- CONTENT WRAPPER --- */
+.skincare-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* --- TEXT AREA --- */
+.skincare-text {
+  max-width: 650px;
+  margin-bottom: 60px;
+}
+
+.skincare-heading {
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.skincare-subheading {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+  margin-bottom: 25px;
+}
+
+.skincare-btn {
+  display: inline-block;
+  background-color: #0d312d;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skincare-btn:hover {
+  background-color: #08231f;
+}
+
+/* --- BOXES ON IMAGE --- */
+.skincare-boxes {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.left-box,
+.right-box {
+  flex: 1 1 45%;
+  border-radius: 12px;
+  padding: 35px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.left-box {
+  background-color: rgba(6, 46, 43, 0.9);
+}
+
+.left-box h3 {
+  color: #d1c529;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.right-box {
+  background: rgba(198, 128, 101, 0.9);
+}
+
+.right-box h3 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.left-box ul,
+.right-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-box li::before {
+  content: "✓";
+  color: #d1c529;
+  margin-right: 8px;
+}
+
+.right-box li::before {
+  content: "✕";
+  color: #fff;
+  margin-right: 8px;
+}
+
+/* --- MOBILE VIEW --- */
+@media (max-width: 768px) {
+  .skincare-heading {
+    font-size: 34px;
+  }
+
+  .skincare-subheading {
+    font-size: 16px;
+  }
+
+  .skincare-boxes {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-box,
+  .right-box {
+    flex: 1 1 100%;
+    padding: 25px;
+  }
+}
+</style>

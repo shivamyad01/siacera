@@ -1,0 +1,38 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-a67cd0a9-ab7c-4593-a79b-6d3a4352535e",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "custom_liquid_7hAyUC": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div style=\"max-width:600px;margin:50px auto;padding:20px;border:1px solid #ddd;border-radius:10px;text-align:center;\">\n  <h2 style=\"font-size:24px;margin-bottom:10px;\">Track Your Order</h2>\n  <p style=\"font-size:16px;color:#555;\">Enter your tracking number below to get the latest delivery updates.</p>\n  \n  <form onsubmit=\"trackOrder(event)\" style=\"margin-top:20px;\">\n    <input type=\"text\" id=\"trackingNumber\" placeholder=\"Enter Tracking Number\" required\n           style=\"width:80%;padding:10px;border:1px solid #ccc;border-radius:5px;\">\n    <button type=\"submit\" style=\"margin-top:10px;padding:10px 20px;background:#000;color:#fff;border:none;border-radius:5px;cursor:pointer;\">\n      Track\n    </button>\n  </form>\n\n  <div id=\"trackingResult\" style=\"margin-top:20px;font-size:15px;color:#333;\"></div>\n</div>\n\n<script>\n  function trackOrder(event) {\n    event.preventDefault();\n    var trackingNum = document.getElementById('trackingNumber').value.trim();\n    var result = document.getElementById('trackingResult');\n\n    if (!trackingNum) {\n      result.innerHTML = \"Please enter a tracking number.\";\n      return;\n    }\n\n    // Example: Delhivery tracking URL\n    var delhiveryUrl = `https://www.delhivery.com/`;\n    result.innerHTML = `\n      <p>Click below to view your tracking details:</p>\n      <a href=\"${delhiveryUrl}\" target=\"_blank\" \n         style=\"color:#007bff;text-decoration:underline;\">Track on Delhivery</a>\n    `;\n  }\n</script>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_7hAyUC"
+  ]
+}

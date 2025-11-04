@@ -118,6 +118,10 @@
             "liquid": "",
             "page": ""
           }
+        },
+        "share_buttons_wrQHBB": {
+          "type": "share_buttons",
+          "settings": {}
         }
       },
       "block_order": [
@@ -132,7 +136,8 @@
         "buy_buttons",
         "description",
         "accordion_TKK3f8",
-        "accordion_MiKjBy"
+        "accordion_MiKjBy",
+        "share_buttons_wrQHBB"
       ],
       "settings": {
         "color_scheme": "scheme-2",
@@ -173,6 +178,24 @@
         "overlay_opacity": 30
       }
     },
+    "image_with_text_overlay_e9GWkz": {
+      "type": "image-with-text-overlay",
+      "name": "t:sections.image_with_text_overlay.presets.image_with_text_overlay.name",
+      "settings": {
+        "color_scheme": "",
+        "image_size": "auto",
+        "image": "{{ product.metafields.custom.a_content.value }}",
+        "mobile_image": "{{ product.metafields.custom.a_content.value }}",
+        "allow_transparent_header": false,
+        "reveal_on_scroll": true,
+        "remove_vertical_spacing": true,
+        "content_width": "md",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
+    },
     "faq_Mtny3D": {
       "type": "faq",
       "blocks": {
@@ -205,9 +228,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
@@ -227,14 +250,14 @@
       "custom_css": [],
       "settings": {
         "color_scheme": "scheme-2",
-        "separate_section_with_border": false,
+        "separate_section_with_border": true,
         "hide_product_information": false,
-        "stack_products": true,
-        "recommendations_count": 10,
-        "products_per_row_mobile": "2",
+        "stack_products": false,
+        "recommendations_count": 4,
+        "products_per_row_mobile": "1",
         "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 0.3,
-        "vertical_spacing_factor": 0.3,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
         "subheading": "",
         "title": "Related products",
         "content": ""
@@ -244,6 +267,7 @@
   "order": [
     "main",
     "countdown_Vj63BF",
+    "image_with_text_overlay_e9GWkz",
     "faq_Mtny3D",
     "175836432576205344",
     "related-products"
