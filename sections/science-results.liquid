@@ -1,0 +1,214 @@
+<section class="science-results">
+  <div class="science-container">
+    <div class="science-heading">
+      <div class="left-content">
+        <h2>{{ section.settings.heading | escape | newline_to_br }}</h2>
+      </div>
+      <div class="right-content">
+        <div class="science-subtext">
+          <span class="highlight-line"></span>
+          <p>{{ section.settings.subtext }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="science-stats">
+      {% for block in section.blocks %}
+        <div class="stat">
+          <h3>{{ block.settings.number }}</h3>
+          <p>{{ block.settings.label }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<style>
+.science-results {
+  background-color: #faf7f5;
+  padding: 60px 20px;
+  color: #0a1a17;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.science-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.science-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.left-content h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.right-content {
+  flex: 0 0 35%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.science-subtext {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #0a1a17;
+  font-weight: 400;
+  max-width: 280px;
+  line-height: 1.4;
+}
+
+.highlight-line {
+  display: inline-block;
+  width: 2px;
+  height: 40px;
+  background-color: #d8d840;
+  margin-right: 12px;
+}
+
+.science-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1 1 22%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.stat h3 {
+  font-size: 2.4rem;
+  color: #7c9491;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0a1a17;
+}
+
+@media (max-width: 992px) {
+  .science-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .right-content {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .left-content h2 {
+    font-size: 2.2rem;
+  }
+
+  .science-subtext {
+    font-size: 0.95rem;
+    max-width: 100%;
+  }
+
+  .highlight-line {
+    height: 30px;
+  }
+
+  .science-stats {
+    margin-top: 40px;
+  }
+}
+
+/* 📱 Show 2 stats per row on mobile */
+@media (max-width: 768px) {
+  .science-results {
+    padding: 40px 16px;
+  }
+
+  .left-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .science-stats {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .stat {
+    flex: 1 1 calc(50% - 16px);
+    text-align: center;
+  }
+
+  .stat h3 {
+    font-size: 2rem;
+  }
+
+  .stat p {
+    font-size: 0.9rem;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "Science Results Section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Groundbreaking\nscience, remarkable\nresults."
+    },
+    {
+      "type": "text",
+      "id": "subtext",
+      "label": "Right Side Text",
+      "default": "Discover the first skincare created to boost NAD+ in skin."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat_item",
+      "name": "Stat Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number / Count",
+          "default": "7+"
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label Text",
+          "default": "Years of Research"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Science Results",
+      "blocks": [
+        { "type": "stat_item", "settings": { "number": "7+", "label": "Years of Research" } },
+        { "type": "stat_item", "settings": { "number": "8", "label": "Product Formulation Awards" } },
+        { "type": "stat_item", "settings": { "number": "4", "label": "Top Scientists from MIT & Harvard" } },
+        { "type": "stat_item", "settings": { "number": "5", "label": "Human Clinical Trials" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

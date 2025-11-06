@@ -55,6 +55,36 @@
         "controls_color": "#ffffff"
       }
     },
+    "featured_collections_mBqpgA": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_h7Mb3q": {
+          "type": "collection",
+          "settings": {
+            "collection": "skin-care",
+            "products_count": 8,
+            "title": "Our best Seller",
+            "link_url": "",
+            "link_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_h7Mb3q"
+      ],
+      "name": "t:sections.featured_collections.presets.featured_collections.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
     "ss_video_slider_2_HDh87q": {
       "type": "ss-video-slider-2",
       "blocks": {
@@ -64,8 +94,8 @@
             "media_type": "video",
             "video": "shopify://files/videos/smiling-woman-removing-makeup-with-cotton-pad-and-2025-09-24-17-56-14-utc.mov",
             "video_url": "",
-            "title": "",
-            "button": "Glow",
+            "title": "Glow",
+            "button": "",
             "url": "shopify://collections/glow"
           }
         },
@@ -75,8 +105,8 @@
             "media_type": "video",
             "video": "shopify://files/videos/1761666851471613.mp4",
             "video_url": "",
-            "title": "",
-            "button": "Cleanse",
+            "title": "Cleanse",
+            "button": "",
             "url": "shopify://collections/cleanse"
           }
         },
@@ -86,8 +116,8 @@
             "media_type": "video",
             "video": "shopify://files/videos/1761666537832933.mp4",
             "video_url": "",
-            "title": "",
-            "button": "Hydrate",
+            "title": "Hydrate",
+            "button": "",
             "url": "shopify://collections/hydrate"
           }
         },
@@ -97,8 +127,8 @@
             "media_type": "video",
             "video": "shopify://files/videos/1761666237324656.mp4",
             "video_url": "",
-            "title": "",
-            "button": "Protect",
+            "title": "Protect",
+            "button": "",
             "url": "shopify://collections/protect"
           }
         }
@@ -111,10 +141,10 @@
       ],
       "name": "SS - Video slider #2",
       "settings": {
-        "heading": "<p>SHOP BY CATEGORY</p>",
+        "heading": "",
         "heading_custom": true,
         "heading_font": "questrial_n4",
-        "heading_size": 24,
+        "heading_size": 14,
         "heading_size_mobile": 20,
         "heading_height": 70,
         "heading_align": "center",
@@ -131,8 +161,8 @@
         "arrow_show_mobile": true,
         "slider_view": 4,
         "slider_view_mobile": 1.7,
-        "slider_gap": 0,
-        "slider_gap_mobile": 0,
+        "slider_gap": 18,
+        "slider_gap_mobile": 12,
         "slider_mt": 24,
         "slider_mt_mobile": 24,
         "slide_radius": 0,
@@ -149,8 +179,8 @@
         "slide_content_align_mobile": "left",
         "title_custom": true,
         "title_font": "questrial_n4",
-        "title_size": 24,
-        "title_size_mobile": 24,
+        "title_size": 18,
+        "title_size_mobile": 19,
         "title_height": 130,
         "button_custom": false,
         "button_font": "josefin_sans_n4",
@@ -205,45 +235,64 @@
         "lazy": true
       }
     },
-    "featured-collections-1": {
-      "type": "featured-collections",
+    "skincare_comparison_gBj8zd": {
+      "type": "skincare-comparison",
+      "name": "Skincare Comparison",
+      "settings": {
+        "heading": "Unlike any other skincare",
+        "subheading": "We are the first and only skincare created with groundbreaking technology that allows NAD+ precursors to reach the epidermis to stimulate NAD+ where it matters most.",
+        "background_image_desktop": "shopify://shop_images/f6339b990c634784c87334ff40ee742d3cf3c8bd.webp",
+        "background_image_mobile": "shopify://shop_images/03616c5694e8cf700fdd27ed1f3d9eea49f16559.webp",
+        "left_title": "SIACERA",
+        "left_points": "<ul><li>Created from breakthrough NAD+ research by Harvard skin biologist Anna Mandinova</li><li>Intercepts aging by replenishing cellular energy levels</li><li>Supports immediate results and long-term skin health</li><li>Unique NAD+ boosting formula that targets skin cells</li></ul>",
+        "right_title": "OTHER BRANDS",
+        "right_points": "<ul><li>Created using traditional ingredients; focus on marketing instead of science</li><li>Addresses surface symptoms of aging, not the cause</li><li>Only provides temporary results</li><li>May use NAD+ molecules too large to penetrate the skin barrier</li></ul>",
+        "button_text": "Shop Our Products",
+        "button_link": ""
+      }
+    },
+    "science_results_XLGdtF": {
+      "type": "science-results",
       "blocks": {
-        "collection-1": {
-          "type": "collection",
+        "stat_item_mfqy9T": {
+          "type": "stat_item",
           "settings": {
-            "collection": "skin-care",
-            "products_count": 4,
-            "title": "SkinCare",
-            "link_url": "shopify://collections/all",
-            "link_text": ""
+            "number": "7+",
+            "label": "Years of Research"
           }
         },
-        "collection-2": {
-          "type": "collection",
+        "stat_item_Dcc9wP": {
+          "type": "stat_item",
           "settings": {
-            "collection": "gifting",
-            "products_count": 8,
-            "title": "Gifting",
-            "link_url": "shopify://collections/gifting",
-            "link_text": ""
+            "number": "8",
+            "label": "Product Formulation Awards"
+          }
+        },
+        "stat_item_43VLQc": {
+          "type": "stat_item",
+          "settings": {
+            "number": "4",
+            "label": "Top Scientists from MIT & Harvard"
+          }
+        },
+        "stat_item_FqNXw8": {
+          "type": "stat_item",
+          "settings": {
+            "number": "5",
+            "label": "Human Clinical Trials"
           }
         }
       },
       "block_order": [
-        "collection-1",
-        "collection-2"
+        "stat_item_mfqy9T",
+        "stat_item_Dcc9wP",
+        "stat_item_43VLQc",
+        "stat_item_FqNXw8"
       ],
-      "custom_css": [],
+      "name": "Science Results",
       "settings": {
-        "color_scheme": "scheme-2",
-        "separate_section_with_border": false,
-        "hide_product_information": false,
-        "stack_products": false,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "horizontal_spacing_factor": 0.2,
-        "vertical_spacing_factor": 0.4,
-        "subheading": "DISCOVER OUR RANGE"
+        "heading": "Groundbreaking\nscience, remarkable\nresults.",
+        "subtext": "Discover the first skincare created to boost NAD+ in skin."
       }
     },
     "scrolling_content_zcxbpQ": {
@@ -295,22 +344,6 @@
         "item_horizontal_spacing_desktop": 105,
         "background": "",
         "text_color": ""
-      }
-    },
-    "skincare_comparison_gBj8zd": {
-      "type": "skincare-comparison",
-      "name": "Skincare Comparison",
-      "settings": {
-        "heading": "Unlike any other skincare",
-        "subheading": "We are the first and only skincare created with groundbreaking technology that allows NAD+ precursors to reach the epidermis to stimulate NAD+ where it matters most.",
-        "background_image_desktop": "shopify://shop_images/f6339b990c634784c87334ff40ee742d3cf3c8bd.webp",
-        "background_image_mobile": "shopify://shop_images/03616c5694e8cf700fdd27ed1f3d9eea49f16559.webp",
-        "left_title": "SIACERA",
-        "left_points": "<ul><li>Created from breakthrough NAD+ research by Harvard skin biologist Anna Mandinova</li><li>Intercepts aging by replenishing cellular energy levels</li><li>Supports immediate results and long-term skin health</li><li>Unique NAD+ boosting formula that targets skin cells</li></ul>",
-        "right_title": "OTHER BRANDS",
-        "right_points": "<ul><li>Created using traditional ingredients; focus on marketing instead of science</li><li>Addresses surface symptoms of aging, not the cause</li><li>Only provides temporary results</li><li>May use NAD+ molecules too large to penetrate the skin barrier</li></ul>",
-        "button_text": "Shop Our Products",
-        "button_link": ""
       }
     },
     "video_y4krLx": {
@@ -675,6 +708,7 @@
         "item_tFKeXm",
         "item_L7q6Gn"
       ],
+      "disabled": true,
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "color_scheme": "scheme-2",
@@ -724,6 +758,7 @@
         "testimonial_AtEfnp",
         "testimonial-3"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-2",
         "separate_section_with_border": false,
@@ -855,6 +890,7 @@
         "item_FQRgGW",
         "item_TjwkDb"
       ],
+      "disabled": true,
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "color_scheme": "scheme-2",
@@ -868,10 +904,11 @@
   },
   "order": [
     "slideshow",
+    "featured_collections_mBqpgA",
     "ss_video_slider_2_HDh87q",
-    "featured-collections-1",
-    "scrolling_content_zcxbpQ",
     "skincare_comparison_gBj8zd",
+    "science_results_XLGdtF",
+    "scrolling_content_zcxbpQ",
     "video_y4krLx",
     "scrolling-content-2",
     "featured_product_tDE6LU",

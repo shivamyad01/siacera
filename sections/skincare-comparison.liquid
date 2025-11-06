@@ -99,10 +99,12 @@
 <style>
 /* --- SECTION WRAPPER --- */
 .skincare-comparison {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: var(--text-font-family);
   color: #fff;
   position: relative;
   overflow: hidden;
+  font-size: var(--text-base);
+  line-height: var(--text-line-height);
 }
 
 /* --- HERO BACKGROUND --- */
@@ -153,19 +155,22 @@
 }
 
 .skincare-heading {
-  font-size: 52px;
-  font-weight: 600;
+  font-family: var(--heading-font-family);
+  font-size: var(--text-h1);
+  font-weight: var(--heading-font-weight);
   margin-bottom: 15px;
-  line-height: 1.2;
+  line-height: var(--heading-line-height);
   color: #fff;
+  letter-spacing: var(--heading-letter-spacing);
 }
 
 .skincare-subheading {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: var(--text-lg);
+  line-height: var(--text-line-height);
   color: #fff;
   text-shadow: 0 2px 10px rgba(0,0,0,0.4);
   margin-bottom: 25px;
+  font-weight: 400;
 }
 
 .skincare-btn {
@@ -203,10 +208,17 @@
   background-color: rgba(6, 46, 43, 0.9);
 }
 
+.left-box h3,
+.right-box h3 {
+  font-family: var(--heading-font-family);
+  font-size: var(--text-h3);
+  font-weight: var(--heading-font-weight);
+  margin-bottom: 15px;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
 .left-box h3 {
   color: #d1c529;
-  margin-bottom: 15px;
-  font-weight: 600;
 }
 
 .right-box {
@@ -215,8 +227,6 @@
 
 .right-box h3 {
   color: #fff;
-  font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .left-box ul,
@@ -241,11 +251,11 @@
 /* --- MOBILE VIEW --- */
 @media (max-width: 768px) {
   .skincare-heading {
-    font-size: 34px;
+    font-size: var(--text-h2);
   }
 
   .skincare-subheading {
-    font-size: 16px;
+    font-size: var(--text-base);
   }
 
   .skincare-boxes {
