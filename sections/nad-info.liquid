@@ -1,0 +1,99 @@
+<section class="nad-section" style="background-color:#f4f6f4; padding:60px 20px; text-align:center;">
+  <div class="nad-container" style="max-width:1200px; margin:0 auto;">
+    <p class="nad-subheading" style="letter-spacing:2px; font-size:14px; color:#223;">{{ section.settings.subheading }}</p>
+    <h2 class="nad-heading" style="font-size:36px; font-weight:500; color:#092b25; margin:15px 0 40px;">
+      {{ section.settings.heading }}
+    </h2>
+
+    <div class="nad-content" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:40px;">
+      <!-- Left Text -->
+      <div class="nad-left" style="flex:1 1 300px; text-align:left;">
+        <p style="border-left:2px solid #d1d800; padding-left:15px; margin-bottom:25px;">
+          {{ section.settings.left_text1 }}
+        </p>
+        <p style="border-left:2px solid #d1d800; padding-left:15px;">
+          {{ section.settings.left_text2 }}
+        </p>
+      </div>
+
+      <!-- Center Image -->
+      <div class="nad-image" style="flex:0 1 350px;">
+        {% if section.settings.center_image != blank %}
+          <img src="{{ section.settings.center_image | image_url: width:700 }}" alt="NAD Image" style="max-width:100%; height:auto;">
+        {% endif %}
+       
+      </div>
+
+      <!-- Right Text -->
+      <div class="nad-right" style="flex:1 1 300px; text-align:left;">
+        <p style="border-left:2px solid #d1d800; padding-left:15px;">
+          {{ section.settings.right_text }}
+        </p>
+        {% if section.settings.button_link != blank %}
+          <a href="{{ section.settings.button_link }}" class="nad-btn" style="display:inline-block; margin-top:20px; font-weight:500; color:#092b25; text-decoration:none;">
+            {{ section.settings.button_text }} →
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "NAD Info Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "OUR SCIENCE"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "We lose about 50% of NAD+ by age 50."
+    },
+    {
+      "type": "richtext",
+      "id": "left_text1",
+      "label": "Left Text Block 1",
+      "default": "<p>NAD+ is the molecule that feeds our skin cells so they can replenish and thrive.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "left_text2",
+      "label": "Left Text Block 2",
+      "default": "<p>Starting in our 20's, NAD+ naturally declines. This is the leading cause of visible signs of aging.</p>"
+    },
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center Image"
+    },
+    {
+      "type": "richtext",
+      "id": "right_text",
+      "label": "Right Text Block",
+      "default": "<p>Boosting NAD+ is the best way to restore cellular health. We developed a revolutionary complex to restore NAD+ specifically in skin cells.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "LEARN MORE"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "NAD Info Section"
+    }
+  ]
+}
+{% endschema %}

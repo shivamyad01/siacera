@@ -235,6 +235,20 @@
         "lazy": true
       }
     },
+    "nad_info_LRHyc7": {
+      "type": "nad-info",
+      "name": "NAD Info Section",
+      "settings": {
+        "subheading": "OUR SCIENCE",
+        "heading": "We lose about 50% of NAD+ by age 50.",
+        "left_text1": "<p>NAD+ is the molecule that feeds our skin cells so they can replenish and thrive.</p>",
+        "left_text2": "<p>Starting in our 20's, NAD+ naturally declines. This is the leading cause of visible signs of aging.</p>",
+        "center_image": "shopify://shop_images/Video_f06e380f-68fc-4edd-b83c-4efc3a605c3f.webp",
+        "right_text": "<p>Boosting NAD+ is the best way to restore cellular health. We developed a revolutionary complex to restore NAD+ specifically in skin cells.</p>",
+        "button_text": "LEARN MORE",
+        "button_link": ""
+      }
+    },
     "skincare_comparison_gBj8zd": {
       "type": "skincare-comparison",
       "name": "Skincare Comparison",
@@ -906,6 +920,7 @@
     "slideshow",
     "featured_collections_mBqpgA",
     "ss_video_slider_2_HDh87q",
+    "nad_info_LRHyc7",
     "skincare_comparison_gBj8zd",
     "science_results_XLGdtF",
     "scrolling_content_zcxbpQ",

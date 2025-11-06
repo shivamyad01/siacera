@@ -1,15 +1,11 @@
 <section class="science-results">
   <div class="science-container">
     <div class="science-heading">
-      <div class="left-content">
-        <h2>{{ section.settings.heading | escape | newline_to_br }}</h2>
-      </div>
-      <div class="right-content">
-        <div class="science-subtext">
-          <span class="highlight-line"></span>
-          <p>{{ section.settings.subtext }}</p>
-        </div>
-      </div>
+      <h2>{{ section.settings.heading | escape | newline_to_br }}</h2>
+      <p class="science-subtext">
+        <span class="highlight-line"></span>
+        {{ section.settings.subtext }}
+      </p>
     </div>
 
     <div class="science-stats">
@@ -26,45 +22,30 @@
 <style>
 .science-results {
   background-color: #faf7f5;
-  padding: 60px 20px;
+  padding: 80px 20px;
   color: #0a1a17;
   font-family: 'Helvetica Neue', sans-serif;
 }
 
 .science-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
-.science-heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-}
-
-.left-content h2 {
-  font-size: 2.8rem;
+.science-heading h2 {
+  font-size: 3.5rem;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0;
-}
-
-.right-content {
-  flex: 0 0 35%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 
 .science-subtext {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #0a1a17;
   font-weight: 400;
-  max-width: 280px;
-  line-height: 1.4;
+  margin-top: 20px;
 }
 
 .highlight-line {
@@ -79,85 +60,37 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 50px;
-  gap: 20px;
+  margin-top: 80px;
 }
 
 .stat {
   flex: 1 1 22%;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .stat h3 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   color: #7c9491;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .stat p {
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #0a1a17;
 }
 
-@media (max-width: 992px) {
-  .science-heading {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .right-content {
-    flex: 1;
-    justify-content: flex-start;
-  }
-
-  .left-content h2 {
+@media (max-width: 768px) {
+  .science-heading h2 {
     font-size: 2.2rem;
   }
-
-  .science-subtext {
-    font-size: 0.95rem;
-    max-width: 100%;
-  }
-
-  .highlight-line {
-    height: 30px;
-  }
-
   .science-stats {
-    margin-top: 40px;
+    flex-direction: column;
   }
-}
-
-/* 📱 Show 2 stats per row on mobile */
-@media (max-width: 768px) {
-  .science-results {
-    padding: 40px 16px;
-  }
-
-  .left-content h2 {
-    font-size: 1.8rem;
-  }
-
-  .science-stats {
-    justify-content: center;
-    gap: 16px;
-  }
-
   .stat {
-    flex: 1 1 calc(50% - 16px);
-    text-align: center;
-  }
-
-  .stat h3 {
-    font-size: 2rem;
-  }
-
-  .stat p {
-    font-size: 0.9rem;
+    margin-bottom: 30px;
   }
 }
 </style>
@@ -175,7 +108,7 @@
     {
       "type": "text",
       "id": "subtext",
-      "label": "Right Side Text",
+      "label": "Subtext",
       "default": "Discover the first skincare created to boost NAD+ in skin."
     }
   ],
