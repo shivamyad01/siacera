@@ -85,6 +85,31 @@
         "subheading": ""
       }
     },
+    "quote_slider_LETXWk": {
+      "type": "quote-slider",
+      "blocks": {
+        "quote_block_mqjEVr": {
+          "type": "quote_block",
+          "settings": {
+            "quote_text": "Longevity isn’t just for the bros anymore. Enter: the longevity ladies.",
+            "quote_source": "THE WALL STREET JOURNAL."
+          }
+        },
+        "quote_block_GgwCLF": {
+          "type": "quote_block",
+          "settings": {
+            "quote_text": "Step aside longevity bros. It's time for the longevity ladies.",
+            "quote_source": "THE WALL STREET JOURNAL."
+          }
+        }
+      },
+      "block_order": [
+        "quote_block_mqjEVr",
+        "quote_block_GgwCLF"
+      ],
+      "name": "Quote Slider",
+      "settings": {}
+    },
     "ss_video_slider_2_HDh87q": {
       "type": "ss-video-slider-2",
       "blocks": {
@@ -246,7 +271,7 @@
         "center_image": "shopify://shop_images/Video_f06e380f-68fc-4edd-b83c-4efc3a605c3f.webp",
         "right_text": "<p>Boosting NAD+ is the best way to restore cellular health. We developed a revolutionary complex to restore NAD+ specifically in skin cells.</p>",
         "button_text": "LEARN MORE",
-        "button_link": ""
+        "button_link": "shopify://products/siacera-nanobright-face-wash"
       }
     },
     "skincare_comparison_gBj8zd": {
@@ -904,7 +929,6 @@
         "item_FQRgGW",
         "item_TjwkDb"
       ],
-      "disabled": true,
       "name": "t:sections.text_with_icons.presets.text_with_icons.name",
       "settings": {
         "color_scheme": "scheme-2",
@@ -914,11 +938,42 @@
         "text_color": "#1c1c1c",
         "text_alignment": "center"
       }
+    },
+    "skin_transformation_QFQbce": {
+      "type": "skin-transformation",
+      "blocks": {
+        "image_F9HkP6": {
+          "type": "image",
+          "settings": {
+            "slide_image": "shopify://shop_images/Ingredients_f49ed050-722a-41db-9302-a44d1e35fd5c.jpg"
+          }
+        },
+        "image_UzDXRz": {
+          "type": "image",
+          "settings": {
+            "slide_image": "shopify://shop_images/How_to_use_112f1741-c3be-4a1e-afb7-4b86f2797a08.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_F9HkP6",
+        "image_UzDXRz"
+      ],
+      "name": "Skin Transformation",
+      "settings": {
+        "left_image": "shopify://shop_images/Rectangle_13_1.webp",
+        "heading": "We transform skin health from the inside out.",
+        "button_text": "EXPLORE ALL PRODUCTS",
+        "button_link": "",
+        "subheading": "Rigorously Tested in Human Clinical Trials",
+        "description": "*Based on an 8-week clinical trial in 30 healthy female participants between the ages of 40–69 years old, using NAD+ Cell Restoration Cream and Retinol Peptide Booster."
+      }
     }
   },
   "order": [
     "slideshow",
     "featured_collections_mBqpgA",
+    "quote_slider_LETXWk",
     "ss_video_slider_2_HDh87q",
     "nad_info_LRHyc7",
     "skincare_comparison_gBj8zd",
@@ -932,6 +987,7 @@
     "text_with_icons_kzc3WV",
     "testimonials",
     "multi_column_V3UreH",
+    "skin_transformation_QFQbce",
     "text_with_icons_TQUUFH"
   ]
 }

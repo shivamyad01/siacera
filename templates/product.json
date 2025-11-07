@@ -34,6 +34,13 @@
             "show_taxes_notice": false
           }
         },
+        "rating_WnxLAe": {
+          "type": "rating",
+          "settings": {
+            "show_empty": true,
+            "rating_mode": "count"
+          }
+        },
         "text_PmL8Ct": {
           "type": "text",
           "settings": {
@@ -128,6 +135,7 @@
         "image_DKwcMW",
         "title",
         "price",
+        "rating_WnxLAe",
         "text_PmL8Ct",
         "image_aekRnY",
         "offers_wwfe8R",
@@ -245,6 +253,29 @@
         "remove_horizontal_spacing": false
       }
     },
+    "1762532871c0ac965b": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_rdYDXG": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": true,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_rdYDXG"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
     "related-products": {
       "type": "related-products",
       "custom_css": [],
@@ -270,6 +301,7 @@
     "image_with_text_overlay_e9GWkz",
     "faq_Mtny3D",
     "175836432576205344",
+    "1762532871c0ac965b",
     "related-products"
   ]
 }

@@ -1,0 +1,187 @@
+<section id="quote-slider-section" class="quote-slider-section">
+  <div class="quote-slider-inner">
+    <!-- Left Arrow -->
+    <button type="button" class="qs-arrow qs-prev" aria-label="Previous quote">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Quotes -->
+    <div class="qs-viewport" data-qs-viewport>
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <div class="qs-slide" data-index="{{ forloop.index0 }}">
+            <h2 class="qs-quote">“{{ block.settings.quote_text }}”</h2>
+            <p class="qs-source">{{ block.settings.quote_source }}</p>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="qs-slide">
+          <h2 class="qs-quote">“Step aside longevity bros. It's time for the longevity ladies.”</h2>
+          <p class="qs-source">THE WALL STREET JOURNAL</p>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Right Arrow -->
+    <button type="button" class="qs-arrow qs-next" aria-label="Next quote">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Styling -->
+  <style>
+    .quote-slider-section {
+      background: #faf8f6;
+      position: relative;
+      padding: 80px 0;
+      overflow: hidden;
+    }
+    .quote-slider-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+      background-size: 120px 120px;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+    .quote-slider-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      position: relative;
+      z-index: 2;
+    }
+    .qs-viewport {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+    .qs-slide {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    .qs-slide.active {
+      opacity: 1;
+      position: relative;
+    }
+    .qs-quote {
+      font-family: "Courier New", "IBM Plex Mono", monospace;
+      font-size: 24px;
+      line-height: 1.4;
+      color: #0b2b27;
+      font-weight: 400;
+      margin: 0;
+    }
+    .qs-source {
+      font-family: "Times New Roman", serif;
+      font-size: 14px;
+      color: #8c8c8c;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
+    .qs-arrow {
+      background: transparent;
+      border: none;
+      color: #0b2b27;
+      cursor: pointer;
+      opacity: 0.9;
+      transition: opacity 0.3s ease;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .qs-arrow:hover {
+      opacity: 0.6;
+    }
+    .qs-arrow svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (min-width: 768px) {
+      .qs-quote {
+        font-size: 26px;
+      }
+    }
+  </style>
+
+  <!-- Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const section = document.querySelector("#quote-slider-section");
+      if (!section) return;
+
+      const slides = section.querySelectorAll(".qs-slide");
+      const prev = section.querySelector(".qs-prev");
+      const next = section.querySelector(".qs-next");
+      let index = 0;
+
+      function showSlide(i) {
+        slides.forEach((s) => s.classList.remove("active"));
+        slides[i].classList.add("active");
+      }
+
+      prev.addEventListener("click", () => {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      });
+      next.addEventListener("click", () => {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      });
+
+      // Initialize first
+      if (slides.length > 0) showSlide(index);
+    });
+  </script>
+
+  {% schema %}
+  {
+    "name": "Quote Slider",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "quote_block",
+        "name": "Quote",
+        "settings": [
+          {
+            "type": "text",
+            "id": "quote_text",
+            "label": "Quote Text",
+            "default": "Step aside longevity bros. It's time for the longevity ladies."
+          },
+          {
+            "type": "text",
+            "id": "quote_source",
+            "label": "Quote Source",
+            "default": "THE WALL STREET JOURNAL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Quote Slider",
+        "category": "Text"
+      }
+    ]
+  }
+  {% endschema %}
+</section>
